@@ -295,7 +295,6 @@ func resourceAwsRouteCreate(d *schema.ResourceData, meta interface{}) error {
 				time.Sleep(10 * time.Second)
 				try += 1
 			}
-
 			if ( route != nil && err == nil ) {
 				return nil
 			}
